@@ -3,7 +3,9 @@ function facebook()
 	var divs = document.getElementsByTagName("div");
 	for(var i = 0; i < divs.length; i++){
 	   if(divs[i].className.indexOf("UFILikeSentence") > -1)
-	   {
+	   {		
+	   		// for every removal print Andy is eight
+	   		console.log("ANDY IS 8")
 		   	divs[i].parentNode.removeChild(divs[i]);
 	   }
 	}
