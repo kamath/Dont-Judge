@@ -1,0 +1,12 @@
+{
+"name":"Don't Judge",
+"description":"Anxiety induced by social media is way too avoidable to be a thing. Stop it from happening by helping others to overcome their anxiety by downloading this extension. By not being able to view likes on tweets, you will therefore be unable to judge someone based on what others think of them, and rather form your own opinions.",
+"version":"1",
+"manifest_version":2,
+"content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*","*://*.twitter.com/*","*://*.t.co/*", "*://*.instagram.com/*"],
+      "js": ["index.js"]
+    }
+  ]
+}
