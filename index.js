@@ -9,20 +9,6 @@ function facebook()
 	}
 }
 
-function maxOfThree(num1, num2, num3) {
-
-   // return num1 if num1 is larger than num2 and if num3 is not 0 (or a falsy value)
-   if (num1 > num2 && num3) {
-       return num1;
-   // otherwise return num2 if num2 is larger than num1 and if num3 is not 0
-   } else if (num2 > num1 && num3) {
-       return num2;
-   // otherwise return num3
-   } else {
-       return num3;
-   }
-}
-
 function twitter()
 {
 	var likes = document.getElementsByClassName("IconTextContainer");
