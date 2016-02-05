@@ -5,6 +5,14 @@ function facebook()
 		likes[i].parentNode.removeChild(likes[i]);
 }
 
+function reddit()
+{
+	alert("hello");
+	var likes = document.getElementsByClassName("midcol unvoted");
+	for(var i = 0; i < likes.length; i++)
+		likes[i].parentNode.removeChild(likes[i]);
+}
+
 function twitter()
 {
 	var likes = document.getElementsByClassName("IconTextContainer");
@@ -42,4 +50,8 @@ if(document.URL.indexOf("twitter") > -1)
 if(document.URL.indexOf("instagram") > -1)
 {
 	window.setInterval(instagram, 1);
+}
+if(document.URL.indexOf("reddit") > -1)
+{
+	window.setInterval(reddit, 1);
 }

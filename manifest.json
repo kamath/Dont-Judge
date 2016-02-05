@@ -5,7 +5,7 @@
 "manifest_version":2,
 "content_scripts": [
     {
-      "matches": ["*://*.facebook.com/*","*://*.twitter.com/*","*://*.t.co/*", "*://*.instagram.com/*"],
+      "matches": ["*://*.facebook.com/*","*://*.twitter.com/*","*://*.t.co/*", "*://*.instagram.com/*", "*://*.reddit.com/*"],
       "js": ["index.js"]
     }
   ]
