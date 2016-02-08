@@ -5,14 +5,6 @@ function facebook()
 		likes[i].parentNode.removeChild(likes[i]);
 }
 
-function reddit()
-{
-	alert("hello");
-	var likes = document.getElementsByClassName("midcol unvoted");
-	for(var i = 0; i < likes.length; i++)
-		likes[i].parentNode.removeChild(likes[i]);
-}
-
 function twitter()
 {
 	var likes = document.getElementsByClassName("IconTextContainer");
@@ -36,6 +28,19 @@ function instagram()
 	for(i=0;i<likes.length;i++)
 	{
 		likes[i].parentNode.removeChild(likes[i]);
+	}
+}
+
+function reddit()
+{
+	var unvoted = document.getElementsByClassName("score unvoted");
+	var down = document.getElementsByClassName("score dislikes");
+	var up = document.getElementsByClassName("score likes");
+	for(var i = 0; i < unvoted.length; i++)
+	{
+		unvoted[i].parentNode.removeChild(unvoted[i]);
+		down[i].parentNode.removeChild(down[i]);
+		up[i].parentNode.removeChild(up[i]);
 	}
 }
 
