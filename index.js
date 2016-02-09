@@ -31,6 +31,19 @@ function instagram()
 	}
 }
 
+function reddit()
+{
+	var unvoted = document.getElementsByClassName("score unvoted");
+	var down = document.getElementsByClassName("score dislikes");
+	var up = document.getElementsByClassName("score likes");
+	for(var i = 0; i < unvoted.length; i++)
+	{
+		unvoted[i].parentNode.removeChild(unvoted[i]);
+		down[i].parentNode.removeChild(down[i]);
+		up[i].parentNode.removeChild(up[i]);
+	}
+}
+
 if(document.URL.indexOf("facebook") > -1)
 {
 	window.setInterval(facebook, 1);
@@ -42,4 +55,8 @@ if(document.URL.indexOf("twitter") > -1)
 if(document.URL.indexOf("instagram") > -1)
 {
 	window.setInterval(instagram, 1);
+}
+if(document.URL.indexOf("reddit") > -1)
+{
+	window.setInterval(reddit, 1);
 }
